@@ -1,0 +1,125 @@
+/* styles.css */
+:root {
+    --primary-bg: #0a192f;
+    --secondary-bg: #112240;
+    --accent-color: #64ffda;
+    --text-primary: #ccd6f6;
+    --text-secondary: #8892b0;
+    --card-bg: #1b2d4d;
+    --success-color: #64ffda;
+    --error-color: #ff6b6b;
+    --gradient-start: #0a192f;
+    --gradient-end: #112240;
+}
+
+/* Global styles */
+.stApp {
+    background: linear-gradient(to bottom right, var(--gradient-start), var(--gradient-end)) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Main header styling */
+.main-header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(27, 45, 77, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    margin-bottom: 2rem;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.main-header h1 {
+    color: var(--accent-color) !important;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background-color: var(--secondary-bg) !important;
+}
+
+.sidebar-header {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.sidebar-header h3 {
+    color: var(--accent-color) !important;
+}
+
+/* Section headers */
+.section-header {
+    margin-bottom: 2rem;
+}
+
+.section-header h1 {
+    color: var(--text-primary) !important;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Image container styling */
+.image-container {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Results card styling */
+.results-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1rem 0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.results-card h3 {
+    color: var(--accent-color) !important;
+    margin-bottom: 1rem;
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(45deg, var(--accent-color), #4dffd3) !important;
+    color: var(--primary-bg) !important;
+    border: none !important;
+    padding: 0.75rem 2rem !important;
+    border-radius: 8px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.3) !important;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(100, 255, 218, 0.4) !important;
+}
+
+/* File uploader styling */
+.uploadedFile {
+    background: var(--card-bg) !important;
+    border-radius: 10px !important;
+    border: 2px dashed var(--accent-color) !important;
+    padding: 1rem !important;
+}
